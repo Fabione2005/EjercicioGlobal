@@ -898,3 +898,473 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
+2020-08-23 13:03:53.789  INFO 3324 --- [main] c.a.e.service.UserServiceTestMock        : Starting UserServiceTestMock on LAPTOP-PES7R819 with PID 3324 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 13:03:53.791 DEBUG 3324 --- [main] c.a.e.service.UserServiceTestMock        : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 13:03:53.791  INFO 3324 --- [main] c.a.e.service.UserServiceTestMock        : No active profile set, falling back to default profiles: default
+2020-08-23 13:03:55.220  INFO 3324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 13:03:55.329  INFO 3324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95ms. Found 1 JPA repository interfaces.
+2020-08-23 13:03:56.956  INFO 3324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 13:03:56.983  INFO 3324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 13:03:57.269  INFO 3324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 13:03:57.388  INFO 3324 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 13:03:57.554  INFO 3324 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 13:03:57.663  INFO 3324 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 13:03:58.343  INFO 3324 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 13:03:59.085  INFO 3324 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 13:03:59.094  INFO 3324 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 13:03:59.644  WARN 3324 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 13:03:59.795  INFO 3324 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ee718678-79ce-4f0f-9438-1eaaa52a4b38
+
+2020-08-23 13:03:59.948  INFO 3324 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 13:04:00.369  INFO 3324 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@625487a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e958f08, org.springframework.security.web.header.HeaderWriterFilter@11e71181, org.springframework.security.web.authentication.logout.LogoutFilter@6c07ad6b, com.app.exercise.security.JWTAuthorizationFilter@682e445e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3bbb8c16, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cd5fcf4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79e10fb4, org.springframework.security.web.session.SessionManagementFilter@39f0c343, org.springframework.security.web.access.ExceptionTranslationFilter@76a9a009, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1eb9bf60]
+2020-08-23 13:04:02.750  INFO 3324 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 13:04:02.751  INFO 3324 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 13:04:02.764  INFO 3324 --- [main] c.a.e.service.UserServiceTestMock        : Started UserServiceTestMock in 9.33 seconds (JVM running for 10.61)
+2020-08-23 13:04:02.878 TRACE 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Buscando usuario con el nombre Daniela
+2020-08-23 13:04:02.888  INFO 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario encontrado [User [id=null, name=Daniela, email=Danielita@gmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true], User [id=null, name=Daniela, email=Dani5533@gmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]]
+2020-08-23 13:04:02.915 TRACE 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Eliminando usuario con idnull
+2020-08-23 13:04:02.930 TRACE 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Agregando usuario User [id=null, name=Samuel, email=Samuel@jjj.cl, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 13:04:02.942 TRACE 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Agregando usuario User [id=null, name=Samuel, email=Samuel@jjj.cl, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 13:04:02.942  INFO 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario Samuel fue agregado correctamente
+2020-08-23 13:04:02.951 TRACE 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Buscando todos los usuarios en el sistema
+2020-08-23 13:04:02.952 TRACE 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Retornando todos los usuarios encontrados
+2020-08-23 13:04:02.964 TRACE 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Actualizando usuario User [id=null, name=Samuel, email=Samuel@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 13:04:02.965  INFO 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario encontrado User [id=null, name=Samuel, email=Samuel@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 13:04:02.966  INFO 3324 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario actualizado exitosamente User [id=null, name=Samuel, email=Samuel@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 13:04:03.028  INFO 3324 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 13:04:03.028  INFO 3324 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 13:04:03.043  INFO 3324 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 13:04:03.043  INFO 3324 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 13:04:03.050  INFO 3324 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 12:06:31.897  INFO 34176 --- [Test worker] com.app.exercise.UsersApplicationTests   : Starting UsersApplicationTests on LAPTOP-PES7R819 with PID 34176 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 12:06:31.900 DEBUG 34176 --- [Test worker] com.app.exercise.UsersApplicationTests   : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 12:06:31.902  INFO 34176 --- [Test worker] com.app.exercise.UsersApplicationTests   : No active profile set, falling back to default profiles: default
+2020-08-23 12:06:34.142  INFO 34176 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 12:06:34.287  INFO 34176 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124ms. Found 1 JPA repository interfaces.
+2020-08-23 12:06:35.516  INFO 34176 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 12:06:35.550  INFO 34176 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 12:06:35.991  INFO 34176 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 12:06:36.174  INFO 34176 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 12:06:36.396  INFO 34176 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 12:06:36.951  INFO 34176 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 12:06:37.278  INFO 34176 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 12:06:39.237  INFO 34176 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 12:06:39.262  INFO 34176 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 12:06:40.668  WARN 34176 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 12:06:40.814  INFO 34176 --- [Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3b932b56-af24-4ce4-bf29-17a06121952d
+
+2020-08-23 12:06:41.033  INFO 34176 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 12:06:41.372  INFO 34176 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c909338, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e5272d, org.springframework.security.web.header.HeaderWriterFilter@6d56a04f, org.springframework.security.web.authentication.logout.LogoutFilter@1d49d946, com.app.exercise.security.JWTAuthorizationFilter@e326d1f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20a8a37c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bb2800d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cc51a72, org.springframework.security.web.session.SessionManagementFilter@6700cf0b, org.springframework.security.web.access.ExceptionTranslationFilter@24f4e512, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@584fc509]
+2020-08-23 12:06:44.319  INFO 34176 --- [Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 12:06:44.714  INFO 34176 --- [Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 12:06:44.735  INFO 34176 --- [Test worker] com.app.exercise.UsersApplicationTests   : Started UsersApplicationTests in 13.296 seconds (JVM running for 15.822)
+2020-08-23 12:06:45.093  INFO 34176 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 12:06:45.094  INFO 34176 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 12:06:45.111  INFO 34176 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 12:06:45.113  INFO 34176 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 12:06:45.119  INFO 34176 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 12:10:50.022  INFO 6648 --- [Test worker] com.app.exercise.UsersApplicationTests   : Starting UsersApplicationTests on LAPTOP-PES7R819 with PID 6648 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 12:10:50.024 DEBUG 6648 --- [Test worker] com.app.exercise.UsersApplicationTests   : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 12:10:50.025  INFO 6648 --- [Test worker] com.app.exercise.UsersApplicationTests   : No active profile set, falling back to default profiles: default
+2020-08-23 12:10:51.977  INFO 6648 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 12:10:52.133  INFO 6648 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141ms. Found 1 JPA repository interfaces.
+2020-08-23 12:10:53.163  INFO 6648 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 12:10:53.205  INFO 6648 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 12:10:53.549  INFO 6648 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 12:10:53.761  INFO 6648 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 12:10:53.946  INFO 6648 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 12:10:54.414  INFO 6648 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 12:10:54.758  INFO 6648 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 12:10:56.244  INFO 6648 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 12:10:56.256  INFO 6648 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 12:10:57.167  WARN 6648 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 12:10:57.297  INFO 6648 --- [Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 41be1b41-e6cb-4f98-b9a4-7c64a6403af2
+
+2020-08-23 12:10:57.420  INFO 6648 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 12:10:57.657  INFO 6648 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d47bf61, org.springframework.security.web.context.SecurityContextPersistenceFilter@5848469c, org.springframework.security.web.header.HeaderWriterFilter@6d2ac117, org.springframework.security.web.authentication.logout.LogoutFilter@66a85feb, com.app.exercise.security.JWTAuthorizationFilter@4274617, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58f7956f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6296d731, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@661b4f2c, org.springframework.security.web.session.SessionManagementFilter@1d937154, org.springframework.security.web.access.ExceptionTranslationFilter@3a9bfdb8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@768ffec]
+2020-08-23 12:10:59.763  INFO 6648 --- [Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 12:11:00.022  INFO 6648 --- [Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 12:11:00.040  INFO 6648 --- [Test worker] com.app.exercise.UsersApplicationTests   : Started UsersApplicationTests in 10.403 seconds (JVM running for 12.379)
+2020-08-23 12:11:00.400  INFO 6648 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 12:11:00.402  INFO 6648 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 12:11:00.428  INFO 6648 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 12:11:00.430  INFO 6648 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 12:11:00.440  INFO 6648 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 12:14:54.018  INFO 30148 --- [Test worker] com.app.exercise.UsersApplicationTests   : Starting UsersApplicationTests on LAPTOP-PES7R819 with PID 30148 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 12:14:54.020 DEBUG 30148 --- [Test worker] com.app.exercise.UsersApplicationTests   : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 12:14:54.021  INFO 30148 --- [Test worker] com.app.exercise.UsersApplicationTests   : No active profile set, falling back to default profiles: default
+2020-08-23 12:14:55.567  INFO 30148 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 12:14:55.702  INFO 30148 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118ms. Found 1 JPA repository interfaces.
+2020-08-23 12:14:56.723  INFO 30148 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 12:14:56.751  INFO 30148 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 12:14:57.171  INFO 30148 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 12:14:57.344  INFO 30148 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 12:14:57.510  INFO 30148 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 12:14:57.949  INFO 30148 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 12:14:58.349  INFO 30148 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 12:14:59.874  INFO 30148 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 12:14:59.886  INFO 30148 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 12:15:00.865  WARN 30148 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 12:15:00.986  INFO 30148 --- [Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f7f98395-e2bb-4fdc-a03c-424dd6236beb
+
+2020-08-23 12:15:01.117  INFO 30148 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 12:15:01.309  INFO 30148 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a96cf49, org.springframework.security.web.context.SecurityContextPersistenceFilter@efdae8b, org.springframework.security.web.header.HeaderWriterFilter@1e2a0dcc, org.springframework.security.web.authentication.logout.LogoutFilter@40453b10, com.app.exercise.security.JWTAuthorizationFilter@2573c476, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46b85d1d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46e3c575, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f7335ec, org.springframework.security.web.session.SessionManagementFilter@4e33fe03, org.springframework.security.web.access.ExceptionTranslationFilter@3652398d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51d1d5db]
+2020-08-23 12:15:03.470  INFO 30148 --- [Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 12:15:03.660  INFO 30148 --- [Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 12:15:03.672  INFO 30148 --- [Test worker] com.app.exercise.UsersApplicationTests   : Started UsersApplicationTests in 9.974 seconds (JVM running for 11.95)
+2020-08-23 12:15:03.975  INFO 30148 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 12:15:03.976  INFO 30148 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 12:15:03.987  INFO 30148 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 12:15:03.988  INFO 30148 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 12:15:03.994  INFO 30148 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 15:13:39.006  INFO 31960 --- [restartedMain] com.app.exercise.UsersApplication        : Starting UsersApplication on LAPTOP-PES7R819 with PID 31960 (C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal\bin\main started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 15:13:39.009 DEBUG 31960 --- [restartedMain] com.app.exercise.UsersApplication        : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 15:13:39.010  INFO 31960 --- [restartedMain] com.app.exercise.UsersApplication        : No active profile set, falling back to default profiles: default
+2020-08-23 15:13:39.451  INFO 31960 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-23 15:13:39.451  INFO 31960 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-23 15:13:40.590  INFO 31960 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 15:13:40.677  INFO 31960 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75ms. Found 1 JPA repository interfaces.
+2020-08-23 15:13:42.106  INFO 31960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-23 15:13:42.126  INFO 31960 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-23 15:13:42.127  INFO 31960 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-23 15:13:42.453  INFO 31960 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-23 15:13:42.453  INFO 31960 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3002 ms
+2020-08-23 15:13:42.552  INFO 31960 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 15:13:42.896  INFO 31960 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 15:13:42.906  INFO 31960 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-08-23 15:13:43.675  INFO 31960 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:13:43.890  INFO 31960 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 15:13:44.210  INFO 31960 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 15:13:44.769  INFO 31960 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 15:13:45.175  INFO 31960 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 15:13:46.935  INFO 31960 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 15:13:46.946  INFO 31960 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:13:48.147  INFO 31960 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-23 15:13:48.665  WARN 31960 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 15:13:48.822  INFO 31960 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a9b50773-f16b-44be-9eec-3954bf5d7811
+
+2020-08-23 15:13:49.109  INFO 31960 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 15:13:49.843  INFO 31960 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c09d8ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@63693025, org.springframework.security.web.header.HeaderWriterFilter@313a500e, org.springframework.security.web.authentication.logout.LogoutFilter@2f93a798, com.app.exercise.security.JWTAuthorizationFilter@98a1a8b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63360e84, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@367809b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3730c492, org.springframework.security.web.session.SessionManagementFilter@51ba3474, org.springframework.security.web.access.ExceptionTranslationFilter@75124a6d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1c45b75f]
+2020-08-23 15:13:55.205  INFO 31960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-23 15:13:55.209  INFO 31960 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 15:13:55.616  INFO 31960 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 15:13:55.646  INFO 31960 --- [restartedMain] com.app.exercise.UsersApplication        : Started UsersApplication in 17.159 seconds (JVM running for 18.036)
+2020-08-23 15:14:33.467  INFO 31960 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-23 15:14:33.469  INFO 31960 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-23 15:14:33.497  INFO 31960 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2020-08-23 15:14:33.512 TRACE 31960 --- [http-nio-8080-exec-2] c.a.e.security.JWTAuthorizationFilter    : Validacion de Token...
+2020-08-23 15:14:34.012 ERROR 31960 --- [http-nio-8080-exec-2] c.a.e.security.JWTAuthorizationFilter    : Token expirado
+2020-08-23 15:14:34.012 ERROR 31960 --- [http-nio-8080-exec-2] c.a.e.security.JWTAuthorizationFilter    : JWT expired at 2020-08-23T01:04:29Z. Current time: 2020-08-23T15:14:34Z, a difference of 51005011 milliseconds.  Allowed clock skew: 0 milliseconds.
+2020-08-23 15:15:14.616 TRACE 31960 --- [http-nio-8080-exec-5] c.a.e.security.JWTAuthorizationFilter    : Validacion de Token...
+2020-08-23 15:15:15.005 ERROR 31960 --- [http-nio-8080-exec-5] c.a.e.c.e.ResponseExceptionHandler       : Usuario no autorizado
+2020-08-23 15:15:15.038  WARN 31960 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.app.exercise.exception.UserUnauthorizeException: Usuario no autorizado]
+2020-08-23 15:16:13.137  INFO 12184 --- [main] c.a.e.service.UserServiceTestMock        : Starting UserServiceTestMock on LAPTOP-PES7R819 with PID 12184 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 15:16:13.139 DEBUG 12184 --- [main] c.a.e.service.UserServiceTestMock        : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 15:16:13.139  INFO 12184 --- [main] c.a.e.service.UserServiceTestMock        : No active profile set, falling back to default profiles: default
+2020-08-23 15:16:14.700  INFO 12184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 15:16:14.794  INFO 12184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 1 JPA repository interfaces.
+2020-08-23 15:16:16.223  INFO 12184 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:16:16.247  INFO 12184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 15:16:16.509  INFO 12184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 15:16:16.635  INFO 12184 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 15:16:16.801  INFO 12184 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 15:16:16.974  INFO 12184 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 15:16:17.573  INFO 12184 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 15:16:18.346  INFO 12184 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 15:16:18.355  INFO 12184 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:16:18.839  WARN 12184 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 15:16:18.949  INFO 12184 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a2275da9-9f93-4de7-8b7b-25fdd2a5de60
+
+2020-08-23 15:16:19.269  INFO 12184 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 15:16:19.469  INFO 12184 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@682e445e, org.springframework.security.web.context.SecurityContextPersistenceFilter@71c0b742, org.springframework.security.web.header.HeaderWriterFilter@342beaf6, org.springframework.security.web.authentication.logout.LogoutFilter@10ed037a, com.app.exercise.security.JWTAuthorizationFilter@79e10fb4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73e1ecd0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19cdc217, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70fede7d, org.springframework.security.web.session.SessionManagementFilter@781654f8, org.springframework.security.web.access.ExceptionTranslationFilter@9785903, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@341c6ac2]
+2020-08-23 15:16:21.217  INFO 12184 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 15:16:21.217  INFO 12184 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 15:16:21.226  INFO 12184 --- [main] c.a.e.service.UserServiceTestMock        : Started UserServiceTestMock in 8.418 seconds (JVM running for 9.697)
+2020-08-23 15:16:21.373 TRACE 12184 --- [main] c.a.e.service.user.UserServiceImpl       : Buscando todos los usuarios en el sistema
+2020-08-23 15:16:21.381 TRACE 12184 --- [main] c.a.e.service.user.UserServiceImpl       : Retornando todos los usuarios encontrados
+2020-08-23 15:16:21.421  INFO 12184 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:16:21.422  INFO 12184 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 15:16:21.437  INFO 12184 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:16:21.438  INFO 12184 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 15:16:21.443  INFO 12184 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 15:16:51.374  INFO 652 --- [main] c.a.e.service.UserServiceTestMock        : Starting UserServiceTestMock on LAPTOP-PES7R819 with PID 652 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 15:16:51.376 DEBUG 652 --- [main] c.a.e.service.UserServiceTestMock        : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 15:16:51.377  INFO 652 --- [main] c.a.e.service.UserServiceTestMock        : No active profile set, falling back to default profiles: default
+2020-08-23 15:16:52.707  INFO 652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 15:16:52.826  INFO 652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 1 JPA repository interfaces.
+2020-08-23 15:16:54.048  INFO 652 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:16:54.070  INFO 652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 15:16:54.314  INFO 652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 15:16:54.463  INFO 652 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 15:16:54.706  INFO 652 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 15:16:54.819  INFO 652 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 15:16:55.422  INFO 652 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 15:16:56.167  INFO 652 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 15:16:56.176  INFO 652 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:16:56.629  WARN 652 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 15:16:56.728  INFO 652 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c5bd017d-21b8-4fe7-95b6-87cb301dbcec
+
+2020-08-23 15:16:56.845  INFO 652 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 15:16:57.268  INFO 652 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@625487a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e958f08, org.springframework.security.web.header.HeaderWriterFilter@11e71181, org.springframework.security.web.authentication.logout.LogoutFilter@6c07ad6b, com.app.exercise.security.JWTAuthorizationFilter@682e445e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3bbb8c16, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cd5fcf4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79e10fb4, org.springframework.security.web.session.SessionManagementFilter@39f0c343, org.springframework.security.web.access.ExceptionTranslationFilter@76a9a009, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1eb9bf60]
+2020-08-23 15:16:58.946  INFO 652 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 15:16:58.947  INFO 652 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 15:16:58.956  INFO 652 --- [main] c.a.e.service.UserServiceTestMock        : Started UserServiceTestMock in 7.926 seconds (JVM running for 8.985)
+2020-08-23 15:16:59.040 TRACE 652 --- [main] c.a.e.service.user.UserServiceImpl       : Buscando usuario con el nombre Daniela
+2020-08-23 15:16:59.048  INFO 652 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario encontrado [User [id=null, name=Daniela, email=Danielita@gmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true], User [id=null, name=Daniela, email=Dani5533@gmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]]
+2020-08-23 15:16:59.074 TRACE 652 --- [main] c.a.e.service.user.UserServiceImpl       : Eliminando usuario con idnull
+2020-08-23 15:16:59.085 TRACE 652 --- [main] c.a.e.service.user.UserServiceImpl       : Agregando usuario User [id=null, name=Samuel, email=Samuel@jjj.cl, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:16:59.099 TRACE 652 --- [main] c.a.e.service.user.UserServiceImpl       : Agregando usuario User [id=null, name=Samuel, email=Samuel@jjj.cl, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:16:59.101  INFO 652 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario Samuel fue agregado correctamente
+2020-08-23 15:16:59.113 TRACE 652 --- [main] c.a.e.service.user.UserServiceImpl       : Buscando todos los usuarios en el sistema
+2020-08-23 15:16:59.114 TRACE 652 --- [main] c.a.e.service.user.UserServiceImpl       : Retornando todos los usuarios encontrados
+2020-08-23 15:16:59.123 TRACE 652 --- [main] c.a.e.service.user.UserServiceImpl       : Actualizando usuario User [id=null, name=Samuel, email=Samuel@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:16:59.125  INFO 652 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario encontrado User [id=null, name=Samuel, email=Samuel@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:16:59.126  INFO 652 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario actualizado exitosamente User [id=null, name=Samuel, email=Samuel@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:16:59.171  INFO 652 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:16:59.172  INFO 652 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 15:16:59.181  INFO 652 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:16:59.182  INFO 652 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 15:16:59.187  INFO 652 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 15:20:58.812  INFO 29764 --- [main] com.app.exercise.UserServiceTestSpock    : Starting UserServiceTestSpock on LAPTOP-PES7R819 with PID 29764 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 15:20:58.815 DEBUG 29764 --- [main] com.app.exercise.UserServiceTestSpock    : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 15:20:58.816  INFO 29764 --- [main] com.app.exercise.UserServiceTestSpock    : No active profile set, falling back to default profiles: default
+2020-08-23 15:20:59.969  INFO 29764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 15:21:00.071  INFO 29764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90ms. Found 1 JPA repository interfaces.
+2020-08-23 15:21:00.746  INFO 29764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:21:00.764  INFO 29764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 15:21:01.016  INFO 29764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 15:21:01.115  INFO 29764 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 15:21:01.245  INFO 29764 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 15:21:01.652  INFO 29764 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 15:21:01.790  INFO 29764 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e3164615-585e-4f08-a7c6-7a9580655b74
+
+2020-08-23 15:21:01.885  INFO 29764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 15:21:02.003  INFO 29764 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 15:21:02.152  INFO 29764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c52fc81, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e3ecf5c, org.springframework.security.web.header.HeaderWriterFilter@2ddb3ae8, org.springframework.security.web.authentication.logout.LogoutFilter@656f62dc, com.app.exercise.security.JWTAuthorizationFilter@7523a3dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@341b13a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34332b8d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2806d6da, org.springframework.security.web.session.SessionManagementFilter@5f96f6a2, org.springframework.security.web.access.ExceptionTranslationFilter@149b0577, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34d45ec0]
+2020-08-23 15:21:03.315  INFO 29764 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 15:21:04.220  INFO 29764 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 15:21:04.232  INFO 29764 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:21:04.647  INFO 29764 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 15:21:04.660  INFO 29764 --- [main] com.app.exercise.UserServiceTestSpock    : Started UserServiceTestSpock in 6.312 seconds (JVM running for 8.101)
+2020-08-23 15:21:04.925 TRACE 29764 --- [main] c.a.e.service.user.UserServiceImpl       : Agregando usuario User [id=null, name=Virginia, email=Vigi@yahoo.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:21:04.957 TRACE 29764 --- [main] c.a.e.service.user.UserServiceImpl       : Buscando todos los usuarios en el sistema
+2020-08-23 15:21:04.958 TRACE 29764 --- [main] c.a.e.service.user.UserServiceImpl       : Retornando todos los usuarios encontrados
+2020-08-23 15:21:04.992 TRACE 29764 --- [main] c.a.e.service.user.UserServiceImpl       : Agregando usuario User [id=null, name=someName, email=someEmail@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=false]
+2020-08-23 15:21:04.993  INFO 29764 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario someName fue agregado correctamente
+2020-08-23 15:21:05.019  INFO 29764 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:21:05.020  INFO 29764 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 15:21:05.055  INFO 29764 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:21:05.057  INFO 29764 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 15:21:05.080  INFO 29764 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 14:32:20.989  INFO 9144 --- [Test worker] com.app.exercise.UsersApplicationTests   : Starting UsersApplicationTests on LAPTOP-PES7R819 with PID 9144 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 14:32:20.992 DEBUG 9144 --- [Test worker] com.app.exercise.UsersApplicationTests   : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 14:32:20.993  INFO 9144 --- [Test worker] com.app.exercise.UsersApplicationTests   : No active profile set, falling back to default profiles: default
+2020-08-23 14:32:22.529  INFO 9144 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 14:32:22.703  INFO 9144 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157ms. Found 1 JPA repository interfaces.
+2020-08-23 14:32:23.427  INFO 9144 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 14:32:23.450  INFO 9144 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 14:32:23.686  INFO 9144 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 14:32:23.858  INFO 9144 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 14:32:23.957  INFO 9144 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 14:32:24.184  INFO 9144 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 14:32:24.378  INFO 9144 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 14:32:25.381  INFO 9144 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 14:32:25.390  INFO 9144 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 14:32:26.090  WARN 9144 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 14:32:26.162  INFO 9144 --- [Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dfa0702a-2344-4d62-9366-b8da1ec4722c
+
+2020-08-23 14:32:26.246  INFO 9144 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 14:32:26.376  INFO 9144 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68e75cc8, org.springframework.security.web.context.SecurityContextPersistenceFilter@772c1204, org.springframework.security.web.header.HeaderWriterFilter@56362b30, org.springframework.security.web.authentication.logout.LogoutFilter@3ac63422, com.app.exercise.security.JWTAuthorizationFilter@53af29a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@545b9321, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ddb476b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fa38870, org.springframework.security.web.session.SessionManagementFilter@1f316239, org.springframework.security.web.access.ExceptionTranslationFilter@72e6f02a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f44f34e]
+2020-08-23 14:32:27.754  INFO 9144 --- [Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 14:32:27.900  INFO 9144 --- [Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 14:32:27.908  INFO 9144 --- [Test worker] com.app.exercise.UsersApplicationTests   : Started UsersApplicationTests in 7.252 seconds (JVM running for 9.478)
+2020-08-23 14:32:28.078  INFO 9144 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 14:32:28.079  INFO 9144 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 14:32:28.089  INFO 9144 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 14:32:28.090  INFO 9144 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 14:32:28.094  INFO 9144 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 14:46:31.522  INFO 24024 --- [Test worker] com.app.exercise.UsersApplicationTests   : Starting UsersApplicationTests on LAPTOP-PES7R819 with PID 24024 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 14:46:31.524 DEBUG 24024 --- [Test worker] com.app.exercise.UsersApplicationTests   : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 14:46:31.525  INFO 24024 --- [Test worker] com.app.exercise.UsersApplicationTests   : No active profile set, falling back to default profiles: default
+2020-08-23 14:46:33.027  INFO 24024 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 14:46:33.118  INFO 24024 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79ms. Found 1 JPA repository interfaces.
+2020-08-23 14:46:33.999  INFO 24024 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 14:46:34.023  INFO 24024 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 14:46:34.275  INFO 24024 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 14:46:34.389  INFO 24024 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 14:46:34.594  INFO 24024 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 14:46:34.985  INFO 24024 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 14:46:35.226  INFO 24024 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 14:46:36.549  INFO 24024 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 14:46:36.558  INFO 24024 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 14:46:37.334  WARN 24024 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 14:46:37.437  INFO 24024 --- [Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5d0053ca-4ab9-43a4-9c23-711d6b340bfe
+
+2020-08-23 14:46:37.533  INFO 24024 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 14:46:37.692  INFO 24024 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2573c476, org.springframework.security.web.context.SecurityContextPersistenceFilter@59e2e516, org.springframework.security.web.header.HeaderWriterFilter@40bcdf25, org.springframework.security.web.authentication.logout.LogoutFilter@6d0ecb31, com.app.exercise.security.JWTAuthorizationFilter@6f7335ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25522ab7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b9501d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1813b09c, org.springframework.security.web.session.SessionManagementFilter@3da9250, org.springframework.security.web.access.ExceptionTranslationFilter@5975ec4c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@689bba09]
+2020-08-23 14:46:39.922  INFO 24024 --- [Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 14:46:40.157  INFO 24024 --- [Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 14:46:40.174  INFO 24024 --- [Test worker] com.app.exercise.UsersApplicationTests   : Started UsersApplicationTests in 9.016 seconds (JVM running for 11.017)
+2020-08-23 14:46:40.406  INFO 24024 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 14:46:40.408  INFO 24024 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 14:46:40.442  INFO 24024 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 14:46:40.448  INFO 24024 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 14:46:40.463  INFO 24024 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 14:46:59.952  INFO 31236 --- [Test worker] com.app.exercise.UsersApplicationTests   : Starting UsersApplicationTests on LAPTOP-PES7R819 with PID 31236 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 14:46:59.953 DEBUG 31236 --- [Test worker] com.app.exercise.UsersApplicationTests   : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 14:46:59.954  INFO 31236 --- [Test worker] com.app.exercise.UsersApplicationTests   : No active profile set, falling back to default profiles: default
+2020-08-23 14:47:02.006  INFO 31236 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 14:47:02.129  INFO 31236 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 1 JPA repository interfaces.
+2020-08-23 14:47:03.287  INFO 31236 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 14:47:03.316  INFO 31236 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 14:47:03.694  INFO 31236 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 14:47:03.847  INFO 31236 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 14:47:04.159  INFO 31236 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 14:47:04.544  INFO 31236 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 14:47:04.814  INFO 31236 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 14:47:06.208  INFO 31236 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 14:47:06.218  INFO 31236 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 14:47:07.151  WARN 31236 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 14:47:07.262  INFO 31236 --- [Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bd606194-252e-4f2b-9737-101a58e81d84
+
+2020-08-23 14:47:07.408  INFO 31236 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 14:47:07.672  INFO 31236 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1813b09c, org.springframework.security.web.context.SecurityContextPersistenceFilter@46b85d1d, org.springframework.security.web.header.HeaderWriterFilter@2e3cf0f, org.springframework.security.web.authentication.logout.LogoutFilter@6bc132a, com.app.exercise.security.JWTAuthorizationFilter@4e3d850, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bd7af6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e123aea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f88fcce, org.springframework.security.web.session.SessionManagementFilter@5fef8093, org.springframework.security.web.access.ExceptionTranslationFilter@23ac2ce8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ba589fe]
+2020-08-23 14:47:09.784  INFO 31236 --- [Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 14:47:10.028  INFO 31236 --- [Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 14:47:10.039  INFO 31236 --- [Test worker] com.app.exercise.UsersApplicationTests   : Started UsersApplicationTests in 10.423 seconds (JVM running for 12.426)
+2020-08-23 14:47:10.245  INFO 31236 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 14:47:10.246  INFO 31236 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 14:47:10.258  INFO 31236 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 14:47:10.260  INFO 31236 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 14:47:10.266  INFO 31236 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 14:47:50.606  INFO 21920 --- [Test worker] com.app.exercise.UsersApplicationTests   : Starting UsersApplicationTests on LAPTOP-PES7R819 with PID 21920 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 14:47:50.609 DEBUG 21920 --- [Test worker] com.app.exercise.UsersApplicationTests   : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 14:47:50.611  INFO 21920 --- [Test worker] com.app.exercise.UsersApplicationTests   : No active profile set, falling back to default profiles: default
+2020-08-23 14:47:52.524  INFO 21920 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 14:47:52.643  INFO 21920 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104ms. Found 1 JPA repository interfaces.
+2020-08-23 14:47:53.679  INFO 21920 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 14:47:53.704  INFO 21920 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 14:47:54.041  INFO 21920 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 14:47:54.198  INFO 21920 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 14:47:54.364  INFO 21920 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 14:47:54.747  INFO 21920 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 14:47:55.025  INFO 21920 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 14:47:56.569  INFO 21920 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 14:47:56.582  INFO 21920 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 14:47:57.419  WARN 21920 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 14:47:57.525  INFO 21920 --- [Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 101460a3-f850-46dc-b2cd-f9be7cf205de
+
+2020-08-23 14:47:57.624  INFO 21920 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 14:47:57.830  INFO 21920 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15472bef, org.springframework.security.web.context.SecurityContextPersistenceFilter@48e24278, org.springframework.security.web.header.HeaderWriterFilter@2d41afb, org.springframework.security.web.authentication.logout.LogoutFilter@a156e18, com.app.exercise.security.JWTAuthorizationFilter@1afe3549, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36c0c56, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70a7f3cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50ad3359, org.springframework.security.web.session.SessionManagementFilter@64f211d6, org.springframework.security.web.access.ExceptionTranslationFilter@702f0312, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24683c09]
+2020-08-23 14:47:59.617  INFO 21920 --- [Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 14:47:59.828  INFO 21920 --- [Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 14:47:59.840  INFO 21920 --- [Test worker] com.app.exercise.UsersApplicationTests   : Started UsersApplicationTests in 9.669 seconds (JVM running for 11.9)
+2020-08-23 14:48:00.083  INFO 21920 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 14:48:00.084  INFO 21920 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 14:48:00.096  INFO 21920 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 14:48:00.097  INFO 21920 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 14:48:00.102  INFO 21920 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 15:49:17.526  INFO 10260 --- [main] c.a.e.service.UserServiceTestMock        : Starting UserServiceTestMock on LAPTOP-PES7R819 with PID 10260 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 15:49:17.528 DEBUG 10260 --- [main] c.a.e.service.UserServiceTestMock        : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 15:49:17.529  INFO 10260 --- [main] c.a.e.service.UserServiceTestMock        : No active profile set, falling back to default profiles: default
+2020-08-23 15:49:18.880  INFO 10260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 15:49:18.969  INFO 10260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76ms. Found 1 JPA repository interfaces.
+2020-08-23 15:49:20.230  INFO 10260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:49:20.256  INFO 10260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 15:49:20.534  INFO 10260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 15:49:20.653  INFO 10260 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 15:49:20.853  INFO 10260 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 15:49:20.946  INFO 10260 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 15:49:21.613  INFO 10260 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 15:49:22.361  INFO 10260 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 15:49:22.370  INFO 10260 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:49:22.914  WARN 10260 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-23 15:49:23.042  INFO 10260 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b83c87e0-e6eb-4c30-9895-ed55019b1ba4
+
+2020-08-23 15:49:23.135  INFO 10260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 15:49:23.468  INFO 10260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cf01c2e, org.springframework.security.web.context.SecurityContextPersistenceFilter@11e71181, org.springframework.security.web.header.HeaderWriterFilter@2bf2d6eb, org.springframework.security.web.authentication.logout.LogoutFilter@1a2e563e, com.app.exercise.security.JWTAuthorizationFilter@6f15f52a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@222acad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@781654f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1eb9bf60, org.springframework.security.web.session.SessionManagementFilter@7f2b584b, org.springframework.security.web.access.ExceptionTranslationFilter@4eb9ae4d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b0454d2]
+2020-08-23 15:49:25.363  INFO 10260 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 15:49:25.364  INFO 10260 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 15:49:25.375  INFO 10260 --- [main] c.a.e.service.UserServiceTestMock        : Started UserServiceTestMock in 8.206 seconds (JVM running for 9.5)
+2020-08-23 15:49:25.459 TRACE 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Buscando usuario con el nombre Daniela
+2020-08-23 15:49:25.467  INFO 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario encontrado [User [id=null, name=Daniela, email=Danielita@gmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true], User [id=null, name=Daniela, email=Dani5533@gmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]]
+2020-08-23 15:49:25.489 TRACE 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Eliminando usuario con idnull
+2020-08-23 15:49:25.497 TRACE 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Agregando usuario User [id=null, name=Samuel, email=Samuel@jjj.cl, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:49:25.505 TRACE 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Agregando usuario User [id=null, name=Samuel, email=Samuel@jjj.cl, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:49:25.505  INFO 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario Samuel fue agregado correctamente
+2020-08-23 15:49:25.514 TRACE 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Buscando todos los usuarios en el sistema
+2020-08-23 15:49:25.515 TRACE 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Retornando todos los usuarios encontrados
+2020-08-23 15:49:25.524 TRACE 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Actualizando usuario User [id=null, name=Samuel, email=Samuel@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:49:25.526  INFO 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario encontrado User [id=null, name=Samuel, email=Samuel@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:49:25.527  INFO 10260 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario actualizado exitosamente User [id=null, name=Samuel, email=Samuel@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:49:25.556  INFO 10260 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:49:25.556  INFO 10260 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 15:49:25.565  INFO 10260 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:49:25.566  INFO 10260 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 15:49:25.571  INFO 10260 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-23 15:49:43.093  INFO 29348 --- [main] com.app.exercise.UserServiceTestSpock    : Starting UserServiceTestSpock on LAPTOP-PES7R819 with PID 29348 (started by Fabio in C:\Users\Fabio\git\EjercicioGlobal\EjercicioGlobal)
+2020-08-23 15:49:43.094 DEBUG 29348 --- [main] com.app.exercise.UserServiceTestSpock    : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-23 15:49:43.095  INFO 29348 --- [main] com.app.exercise.UserServiceTestSpock    : No active profile set, falling back to default profiles: default
+2020-08-23 15:49:43.893  INFO 29348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-23 15:49:44.001  INFO 29348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96ms. Found 1 JPA repository interfaces.
+2020-08-23 15:49:44.713  INFO 29348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:49:44.732  INFO 29348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-23 15:49:44.943  INFO 29348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-23 15:49:45.044  INFO 29348 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-23 15:49:45.159  INFO 29348 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-23 15:49:45.446  INFO 29348 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-23 15:49:45.656  INFO 29348 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 988cb8b7-24f4-4be1-9d3a-db42423ce0a4
+
+2020-08-23 15:49:45.782  INFO 29348 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-08-23 15:49:45.882  INFO 29348 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-23 15:49:46.003  INFO 29348 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@261db982, org.springframework.security.web.context.SecurityContextPersistenceFilter@35c9a231, org.springframework.security.web.header.HeaderWriterFilter@71f1cc02, org.springframework.security.web.authentication.logout.LogoutFilter@37ad042b, com.app.exercise.security.JWTAuthorizationFilter@ae73c80, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5626d18c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3003827c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22f4f8f2, org.springframework.security.web.session.SessionManagementFilter@52b3bf03, org.springframework.security.web.access.ExceptionTranslationFilter@732f6050, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f4c88f9]
+2020-08-23 15:49:46.754  INFO 29348 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-23 15:49:47.528  INFO 29348 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-23 15:49:47.536  INFO 29348 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:49:47.881  INFO 29348 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-23 15:49:47.891  INFO 29348 --- [main] com.app.exercise.UserServiceTestSpock    : Started UserServiceTestSpock in 5.115 seconds (JVM running for 6.874)
+2020-08-23 15:49:48.258 TRACE 29348 --- [main] c.a.e.service.user.UserServiceImpl       : Agregando usuario User [id=null, name=Virginia, email=Vigi@yahoo.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=true]
+2020-08-23 15:49:48.288 TRACE 29348 --- [main] c.a.e.service.user.UserServiceImpl       : Buscando todos los usuarios en el sistema
+2020-08-23 15:49:48.288 TRACE 29348 --- [main] c.a.e.service.user.UserServiceImpl       : Retornando todos los usuarios encontrados
+2020-08-23 15:49:48.325 TRACE 29348 --- [main] c.a.e.service.user.UserServiceImpl       : Agregando usuario User [id=null, name=someName, email=someEmail@hotmail.com, phone=[Phone [id=null, number=65464654, cityCode=542, countryCode=47]], isActive=false]
+2020-08-23 15:49:48.326  INFO 29348 --- [main] c.a.e.service.user.UserServiceImpl       : Usuario someName fue agregado correctamente
+2020-08-23 15:49:48.348  INFO 29348 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-23 15:49:48.349  INFO 29348 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-08-23 15:49:48.352  WARN 29348 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2020-08-23 15:49:48.352 ERROR 29348 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-08-23 15:49:48.354  WARN 29348 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2020-08-23 15:49:48.354 ERROR 29348 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-08-23 15:49:48.354  WARN 29348 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2020-08-23 15:49:48.355  INFO 29348 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-23 15:49:48.356  INFO 29348 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-23 15:49:48.358  INFO 29348 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
