@@ -12,13 +12,13 @@ API REST para guardar, modificar, eliminar y obtener usuarios utilizando springb
 
 ## Development
 
-1. Modifica el cÛdigo a tu gusto
+1. Modifica el c√≥digo a tu gusto
 
-    > Si modificas alg˙n endpoint recuerda actualizar [endpoint documentation](./endpoints.md)
+    > Si modificas alg√∫n endpoint recuerda actualizar [endpoint documentation](./endpoints.md)
 
 ##Runtime
 
-1. Puedes correr el API desde tu IDE o desde el compilado ejercicioJava.jar luego de hacer build con gradle ubicado en .builds/libs. <br><br>
+1. Puedes correr el API desde tu IDE o desde el compilado EjercicioGlobal-0.0.1-SNAPSHOT.jar luego de hacer build con gradle ubicado en .builds/libs. <br><br>
 
 2. Para llamar al endpoint del token se deben utilizar los datos(email y clave) ya guardados en el archivo "src/main/resources/data.sql" el cual guarda los datos en la H2	al correr la app.<br><br>
 
