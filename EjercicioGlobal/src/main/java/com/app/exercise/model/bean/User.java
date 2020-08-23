@@ -15,16 +15,10 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 @Entity
-@NoArgsConstructor
 @EqualsAndHashCode
-@ToString
 public class User {
 
 	@Id
@@ -40,26 +34,21 @@ public class User {
 	
 	@NotNull(message = "La clave no puede estar vacia")
 	@Pattern(regexp = "^(?=.{4,}$$)(?=(?:.*[A-Z]))(?=.*[a-z])(?=(?:.*[0-9]){2}).*",message = "La clave debe tener un minimo de una mayuscula"
-			+ ", letras minusculas y dos números")
+			+ ", letras minusculas y dos numeros")
 	private String password;
 	
 	@OneToMany(targetEntity=Phone.class, fetch= FetchType.EAGER, cascade= CascadeType.ALL)
 	@JoinColumn(name = "user_id")
-	private List<Phone> phone;
+	private List<Phone> phones;
 	
-	@JsonIgnore
 	private String token;
 	
-	@JsonIgnore
 	private LocalDateTime created;
 	
-	@JsonIgnore
 	private LocalDateTime modified;
 	
-	@JsonIgnore
 	private LocalDateTime last_login;
 	
-	@JsonIgnore
 	private boolean isActive;
 	
 	public User() {
@@ -68,13 +57,13 @@ public class User {
 	
 	public User(String name,
 			String email,
-			String password, List<Phone> phone, LocalDateTime created, LocalDateTime modified, LocalDateTime last_login,
+			String password, List<Phone> phones, LocalDateTime created, LocalDateTime modified, LocalDateTime last_login,
 			boolean isActive) {
 		super();
 		this.name = name;
 		this.email = email;
 		this.password = password;
-		this.phone = phone;
+		this.phones = phones;
 		this.created = created;
 		this.modified = modified;
 		this.last_login = last_login;
@@ -113,12 +102,12 @@ public class User {
 		this.password = password;
 	}
 
-	public List<Phone> getPhone() {
-		return phone;
+	public List<Phone> getPhones() {
+		return phones;
 	}
 
-	public void setPhone(List<Phone> phone) {
-		this.phone = phone;
+	public void setPhones(List<Phone> phones) {
+		this.phones = phones;
 	}
 	
 	public String getToken() {
@@ -176,7 +165,7 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", email=" + email + ", phone=" + phone + ", isActive=" + isActive
+		return "User [id=" + id + ", name=" + name + ", email=" + email + ", phone=" + phones + ", isActive=" + isActive
 				+ "]";
 	}
 	

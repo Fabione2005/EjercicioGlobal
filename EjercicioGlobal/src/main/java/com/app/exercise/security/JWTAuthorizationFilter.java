@@ -33,7 +33,7 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws ServletException, IOException {
 		try {
-			logger.trace("Validación de Token...");
+			logger.trace("Validacion de Token...");
 			if (existeJWTToken(request, response)) {
 				Claims claims = validateToken(request);
 				if (claims.get("authorities") != null) {
@@ -51,7 +51,7 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
 			logger.error(messageForLog);
 			logger.error(e.getMessage());
 			response.setStatus(HttpServletResponse.SC_FORBIDDEN);
-			((HttpServletResponse) response).sendError(HttpServletResponse.SC_FORBIDDEN, e.getMessage());
+			((HttpServletResponse) response).sendError(HttpServletResponse.SC_FORBIDDEN, messageForLog);
 			return;
 		}
 	}	

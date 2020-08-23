@@ -11,7 +11,7 @@ public class BaseResult
 	
 	public BaseResult() 
 	{
-		this.message = "Operación exitosa";
+		this.message = "Operacion exitosa";
 	}
 
 	public String getMessage() {

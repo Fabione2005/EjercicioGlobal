@@ -39,9 +39,9 @@ public class UserServiceImpl extends CommonLogger implements UserService {
 	@Override
 	public ResponseEntity<UserToken> loginAuth(UserToken user) {
 		
-		User userAthenticated = daoUser.findByEmail(user.getUserEmail()).filter(i -> i.getPassword().equals(user.getPassword())
-				&& i.isActive())
-				.orElseThrow(UserUnauthorizeException::new);
+		User userAthenticated = daoUser.findByEmail(user.getUserEmail()).isPresent() ? daoUser.findByEmail(user.getUserEmail())
+				.filter(i -> i.getPassword().equals(user.getPassword()) && i.isActive()).orElseThrow(UserUnauthorizeException::new)
+				: daoUser.findByEmail(user.getUserEmail()).orElseThrow(UserUnauthorizeException::new);
 		
 		String tokenResult = this.getJWTToken(user.getUserEmail());
 		
@@ -62,7 +62,7 @@ public class UserServiceImpl extends CommonLogger implements UserService {
 		user.setLocalDatesWhenAdd(LocalDateTime.now());
 		daoUser.save(user);
 		logger.info("Usuario " + user.getName() + " fue agregado correctamente");
-		return ResponseEntity.status(HttpStatus.OK).body(user);
+		return ResponseEntity.status(HttpStatus.CREATED).body(user);
 
 	}
 

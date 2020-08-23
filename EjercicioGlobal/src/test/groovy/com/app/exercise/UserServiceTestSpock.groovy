@@ -8,7 +8,6 @@ import org.springframework.http.HttpStatus
 
 import com.app.exercise.dao.repository.UserRepository
 import com.app.exercise.exception.UserInfoException
-import com.app.exercise.exception.UserUnauthorizeException
 import com.app.exercise.model.bean.User
 import com.app.exercise.model.generic.UserToken
 import com.app.exercise.service.user.UserService
@@ -89,7 +88,7 @@ class UserServiceTestSpock extends Specification{
 		def userResponse = service.addUser(user)
 
 		then:
-		userResponse.getStatusCode() == HttpStatus.OK
+		userResponse.getStatusCode() == HttpStatus.CREATED
 		1 * repository.save(user)
 	}
 	

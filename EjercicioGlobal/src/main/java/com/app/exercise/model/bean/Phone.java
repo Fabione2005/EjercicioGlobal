@@ -9,14 +9,9 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
 
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 @Entity
-@NoArgsConstructor
 @EqualsAndHashCode
-@ToString
-//@Table(name="phone")
 public class Phone {
 
 	@Id
